@@ -5,11 +5,11 @@
 </template>
 
 <script lang="ts" setup>
-
+import './assets/tailwind.scss'
 </script>
 
 <style lang="scss">
 body {
-  @apply bg-gray-900 dark:text-gray-50;
+  @apply bg-gray-200 dark:bg-gray-900;
 }
 </style>
