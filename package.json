@@ -5,13 +5,14 @@
   "author": "msweeneydev",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt generate",
-    "start": "nuxt start"
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "nuxi start"
   },
   "dependencies": {
-    "core-js": "^3.15.0",
-    "nuxt": "^2.15.7"
+    "nuxt-edge": "latest"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxt/bridge": "npm:@nuxt/bridge-edge"
+  }
 }

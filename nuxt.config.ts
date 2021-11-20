@@ -1,8 +1,9 @@
-export default {
+import {defineNuxtConfig} from "@nuxt/bridge";
+
+export default defineNuxtConfig({
   ssr:true,
   // Target: https://go.nuxtjs.dev/config-target
   target: 'server',
-
   // Global App headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'My Nuxt Application',
@@ -17,6 +18,11 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
+
+  bridge: {
+    vite: true,
+    nitro: true
+  },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
@@ -28,4 +34,4 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: []
-};
+});
