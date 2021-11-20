@@ -18,7 +18,7 @@
     "@tailwindcss/line-clamp": "0.2.2",
     "@tailwindcss/typography": "0.5.0-alpha.2",
     "pinia": "2.0.3",
-    "@nuxt/kit": "latest"
+    "@nuxt/kit": "npm:@nuxt/kit-edge@latest"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.10.0",
