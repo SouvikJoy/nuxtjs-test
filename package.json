@@ -10,9 +10,9 @@
     "start": "nuxi start"
   },
   "dependencies": {
-    "nuxt-edge": "latest"
+    "nuxt3": "latest"
   },
   "devDependencies": {
-    "@nuxt/bridge": "npm:@nuxt/bridge-edge"
+
   }
 }
