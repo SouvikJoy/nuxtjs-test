@@ -26,8 +26,21 @@ export default defineNuxtConfig({
   components: false,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+  buildModules: [
+    '@pinia/nuxt'
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: []
+  modules: [],
+
+  build: {
+    postcss: {
+      postcssOptions: {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
+        }
+      }
+    },
+  }
 });
